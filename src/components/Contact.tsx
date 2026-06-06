@@ -1,27 +1,20 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Clock, Send, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 
 const eventTypes = ['Wedding', 'Corporate Event', 'Community Event', 'Festival/Concert', 'Exhibition/Trade Show', 'School/College Event', 'Other'];
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', phone: '', email: '', eventType: '', eventDate: '', budget: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setError('');
-    try {
-      const { error: dbError } = await supabase.from('contact_submissions').insert([{
-        name: formData.name, phone: formData.phone, email: formData.email, event_type: formData.eventType,
-        event_date: formData.eventDate || null, budget: formData.budget || null, message: formData.message,
-      }]);
-      if (dbError) throw dbError;
-      setSubmitted(true);
-      setTimeout(() => { setSubmitted(false); setFormData({ name: '', phone: '', email: '', eventType: '', eventDate: '', budget: '', message: '' }); }, 4000);
-    } catch { setError('Something went wrong. Please try again or contact us directly.'); }
+    setSubmitted(true);
+    setTimeout(() => {
+      setSubmitted(false);
+      setFormData({ name: '', phone: '', email: '', eventType: '', eventDate: '', budget: '', message: '' });
+    }, 4000);
   };
 
   const inputClass = 'w-full px-4 py-3 rounded-xl border border-navy-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none transition-all text-sm bg-white';
@@ -112,7 +105,6 @@ export default function Contact() {
                   <div><label className="block text-sm font-medium text-navy-700 mb-1">Message</label>
                     <textarea required rows={4} value={formData.message} onChange={(e) => setFormData((f) => ({ ...f, message: e.target.value }))}
                       className={inputClass + ' resize-none'} placeholder="Tell us about your event..." /></div>
-                  {error && <p className="text-red-500 text-sm">{error}</p>}
                   <button type="submit" className="btn-primary w-full text-base">Request a Free Consultation <Send className="w-5 h-5" /></button>
                 </form>
               )}

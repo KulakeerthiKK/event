@@ -2,18 +2,14 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, MapPin, ArrowRight, X } from 'lucide-react';
 import { upcomingEvents } from '../data/content';
-import { supabase } from '../lib/supabase';
 
 export default function UpcomingEvents() {
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', event: '' });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    try {
-      await supabase.from('event_registrations').insert([{ name: formData.name, email: formData.email, phone: formData.phone, event_title: formData.event }]);
-    } catch { /* continue even if supabase fails */ }
     setSubmitted(true);
     setTimeout(() => { setSubmitted(false); setShowForm(false); setFormData({ name: '', email: '', phone: '', event: '' }); }, 3000);
   };

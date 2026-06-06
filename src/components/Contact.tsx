@@ -37,7 +37,7 @@ export default function Contact() {
               <div className="space-y-5">
                 {[
                   { icon: Phone, label: 'Phone', value: '+91 98765 43210' },
-                  { icon: Mail, label: 'Email', value: 'hello@eventcraft.com' },
+                  { icon: Mail, label: 'Email', value: 'hello@petalevents.com' },
                   { icon: MapPin, label: 'Address', value: '42 Event Plaza, MG Road, Mumbai 400001' },
                   { icon: Clock, label: 'Working Hours', value: 'Mon - Sat: 9 AM - 7 PM' },
                 ].map(({ icon: Icon, label, value }) => (

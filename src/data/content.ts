@@ -168,7 +168,7 @@ export const testimonials = [
   {
     name: 'Priya Sharma',
     organization: 'Sharma Family',
-    review: 'EventCraft made our wedding absolutely magical. Every detail was perfect, from the floral arrangements to the seamless coordination. We could enjoy our day without any stress.',
+    review: 'Petal Events made our wedding absolutely magical. Every detail was perfect, from the floral arrangements to the seamless coordination. We could enjoy our day without any stress.',
     rating: 5,
     image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
@@ -189,7 +189,7 @@ export const testimonials = [
   {
     name: 'Rohit Mehta',
     organization: 'Green Valley School',
-    review: 'Our annual day celebration was the best one yet. EventCraft managed the stage, performances, and crowd with such professionalism.',
+    review: 'Our annual day celebration was the best one yet. Petal Events managed the stage, performances, and crowd with such professionalism.',
     rating: 4,
     image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200',
   },

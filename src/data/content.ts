@@ -93,7 +93,7 @@ export const portfolioEvents = [
   {
     id: 2,
     name: 'Sunrise Yoga Flow',
-    location: 'Petal Fitness Studio',
+    location: 'Wow Fitness KA 42 Studio',
     date: 'Jan 2025',
     category: 'Classes',
     description: 'Mindful yoga sessions to improve flexibility and reduce stress.',
@@ -168,7 +168,7 @@ export const testimonials = [
   {
     name: 'Priya Sharma',
     organization: 'Fitness Enthusiast',
-    review: 'Petal Fitness helped me lose 20kg and gain confidence with a plan that fit my busy schedule. The trainers kept me motivated every step of the way.',
+    review: 'Wow Fitness KA 42 helped me lose 20kg and gain confidence with a plan that fit my busy schedule. The trainers kept me motivated every step of the way.',
     rating: 5,
     image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
@@ -182,7 +182,7 @@ export const testimonials = [
   {
     name: 'Ananya Reddy',
     organization: 'Yoga Collective',
-    review: 'The yoga classes at Petal Fitness have helped me build strength and find calm. The instructors are knowledgeable and welcoming.',
+    review: 'The yoga classes at Wow Fitness KA 42 have helped me build strength and find calm. The instructors are knowledgeable and welcoming.',
     rating: 5,
     image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
@@ -220,7 +220,7 @@ export const upcomingEvents = [
   {
     title: 'Sunrise Yoga Flow',
     date: 'July 15, 2025',
-    location: 'Petal Fitness Studio',
+    location: 'Wow Fitness KA 42 Studio',
     description: 'A calming morning yoga session designed to improve flexibility and focus.',
     image: 'https://images.pexels.com/photos/3972701/pexels-photo-3972701.jpeg?auto=compress&cs=tinysrgb&w=600',
   },

@@ -51,7 +51,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-2 group">
             <Sparkles className={`w-7 h-7 transition-colors ${scrolled ? 'text-gold-500' : 'text-gold-400'}`} />
             <span className={`font-heading text-2xl font-bold transition-colors ${scrolled ? 'text-navy-800' : 'text-white'}`}>
-              Petal Fitness
+              Wow Fitness KA 42
             </span>
           </Link>
           <div className="hidden lg:flex items-center gap-8">

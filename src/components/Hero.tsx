@@ -29,8 +29,8 @@ export default function Hero() {
           className="absolute inset-0"
         >
           <img src={heroSlides[current].image} alt="Fitness" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-900/80 via-navy-900/60 to-navy-900/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black-900/80 via-black-900/60 to-black-900/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black-900/50 via-transparent to-transparent" />
         </motion.div>
       </AnimatePresence>
 
@@ -47,8 +47,8 @@ export default function Hero() {
             >
               <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3, duration: 0.6 }}
                 className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-[2px] bg-gold-500" />
-                <span className="text-gold-400 font-body text-sm font-semibold tracking-widest uppercase">Premium Fitness Training</span>
+                <div className="w-12 h-[2px] bg-orange-500" />
+                <span className="text-orange-400 font-body text-sm font-semibold tracking-widest uppercase">Premium Fitness Training</span>
               </motion.div>
 
               <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6">
@@ -74,7 +74,7 @@ export default function Hero() {
         <div className="flex items-center gap-3">
           {heroSlides.map((_, i) => (
             <button key={i} onClick={() => setCurrent(i)}
-              className={`transition-all duration-300 rounded-full ${i === current ? 'w-8 h-2 bg-gold-500' : 'w-2 h-2 bg-white/50 hover:bg-white/80'}`} />
+              className={`transition-all duration-300 rounded-full ${i === current ? 'w-8 h-2 bg-orange-500' : 'w-2 h-2 bg-white/50 hover:bg-white/80'}`} />
           ))}
         </div>
         <div className="flex items-center gap-2">
@@ -91,3 +91,4 @@ export default function Hero() {
     </section>
   );
 }
+

@@ -8,7 +8,7 @@ function Counter({ value, suffix, label }: { value: number; suffix: string; labe
   return (
     <div ref={ref} className="text-center">
       <div className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2">{display}{suffix}</div>
-      <div className="text-navy-300 font-medium">{label}</div>
+      <div className="text-black-300 font-medium">{label}</div>
     </div>
   );
 }
@@ -18,7 +18,7 @@ export default function Statistics() {
     <section className="relative py-20 md:py-28 overflow-hidden">
       <div className="absolute inset-0">
         <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Fitness" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-navy-900/85" />
+        <div className="absolute inset-0 bg-black-900/85" />
       </div>
       <div className="relative container-custom">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
@@ -33,3 +33,4 @@ export default function Statistics() {
     </section>
   );
 }
+

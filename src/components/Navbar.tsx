@@ -44,21 +44,21 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg shadow-navy-900/5' : 'bg-transparent'
+        scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg shadow-black-900/5' : 'bg-transparent'
       }`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3 group">
             <img src={logo} alt="Wow Fitness KA 42 logo" className="w-10 h-auto" />
-            <span className={`font-heading text-2xl font-bold transition-colors ${scrolled ? 'text-navy-800' : 'text-white'}`}>
+            <span className={`font-heading text-2xl font-bold transition-colors ${scrolled ? 'text-black-800' : 'text-white'}`}>
               Wow Fitness KA 42
             </span>
           </Link>
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <button key={link.href} onClick={() => handleClick(link.href)}
-                className={`text-sm font-medium transition-colors hover:text-gold-500 ${scrolled ? 'text-navy-700' : 'text-white/90'}`}>
+                className={`text-sm font-medium transition-colors hover:text-orange-500 ${scrolled ? 'text-black-700' : 'text-white/90'}`}>
                 {link.label}
               </button>
             ))}
@@ -68,7 +68,7 @@ export default function Navbar() {
           </div>
 
           <button onClick={() => setMobileOpen(!mobileOpen)}
-            className={`lg:hidden p-2 rounded-lg transition-colors ${scrolled ? 'text-navy-800 hover:bg-navy-50' : 'text-white hover:bg-white/10'}`}>
+            className={`lg:hidden p-2 rounded-lg transition-colors ${scrolled ? 'text-black-800 hover:bg-black-50' : 'text-white hover:bg-white/10'}`}>
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
@@ -81,12 +81,12 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-white border-t border-navy-100 overflow-hidden"
+            className="lg:hidden bg-white border-t border-black-100 overflow-hidden"
           >
             <div className="container-custom py-4 space-y-1">
               {navLinks.map((link) => (
                 <button key={link.href} onClick={() => handleClick(link.href)}
-                  className="block w-full text-left px-4 py-3 text-navy-700 hover:bg-navy-50 hover:text-gold-600 rounded-lg transition-colors text-sm font-medium">
+                  className="block w-full text-left px-4 py-3 text-black-700 hover:bg-black-50 hover:text-orange-600 rounded-lg transition-colors text-sm font-medium">
                   {link.label}
                 </button>
               ))}
@@ -100,3 +100,4 @@ export default function Navbar() {
     </motion.nav>
   );
 }
+

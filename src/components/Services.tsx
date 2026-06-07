@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { Briefcase, Heart, Users, Layout, GraduationCap, Music, ArrowRight } from 'lucide-react';
+import { ArrowRight, Dumbbell, Users, Leaf, Clock, HeartPulse, Star } from 'lucide-react';
 import { services } from '../data/content';
 
-const iconMap: Record<string, React.ElementType> = { Briefcase, Heart, Users, Layout, GraduationCap, Music };
+const iconMap: Record<string, React.ElementType> = { Dumbbell, Users, Leaf, Clock, HeartPulse, Star };
 
 export default function Services() {
   return (
@@ -11,9 +11,9 @@ export default function Services() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-16">
           <span className="text-gold-500 font-semibold text-sm tracking-widest uppercase">What We Do</span>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-navy-800 mt-3 mb-6">Our Event Services</h2>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-navy-800 mt-3 mb-6">Gym & Wellness Services</h2>
           <p className="text-navy-600 text-lg max-w-2xl mx-auto">
-            Comprehensive event management solutions tailored to your needs, from intimate gatherings to grand celebrations.
+            Personalized fitness, nutrition, and wellness solutions designed to help you build strength, improve health, and stay consistent.
           </p>
         </motion.div>
 

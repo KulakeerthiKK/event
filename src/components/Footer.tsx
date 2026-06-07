@@ -7,9 +7,9 @@ const quickLinks = [
 ];
 
 const serviceLinks = [
-  { label: 'Corporate Events', path: '/services/corporate' }, { label: 'Weddings', path: '/services/weddings' },
-  { label: 'Community Events', path: '/services/community' }, { label: 'Festivals & Concerts', path: '/services/festivals' },
-  { label: 'Exhibitions', path: '/services/exhibitions' }, { label: 'School Events', path: '/services/school' },
+  { label: 'Personal Training', path: '/services/personal-training' }, { label: 'Group Classes', path: '/services/group-classes' },
+  { label: 'Nutrition Coaching', path: '/services/nutrition-coaching' }, { label: 'Wellness Retreats', path: '/services/wellness-retreats' },
+  { label: 'Gym Design', path: '/services/gym-design' }, { label: 'Youth Fitness', path: '/services/youth-fitness' },
 ];
 
 export default function Footer() {
@@ -22,9 +22,9 @@ export default function Footer() {
           <div>
             <Link to="/" className="flex items-center gap-2 mb-6">
               <Sparkles className="w-7 h-7 text-gold-500" />
-              <span className="font-heading text-2xl font-bold">Petal Events</span>
+              <span className="font-heading text-2xl font-bold">Petal Fitness</span>
             </Link>
-            <p className="text-navy-400 text-sm leading-relaxed mb-6">Creating memorable events that bring communities together. Expert planning, creative design, and flawless execution.</p>
+            <p className="text-navy-400 text-sm leading-relaxed mb-6">Premium gym services, expert trainers, and wellness programs designed to help you thrive.</p>
             <div className="flex gap-3">
               {[Facebook, Instagram, Twitter, Linkedin].map((Icon, i) => (
                 <a key={i} href="#" className="w-10 h-10 rounded-lg bg-navy-800 flex items-center justify-center text-navy-400 hover:bg-gold-500 hover:text-navy-900 transition-all duration-300">
@@ -55,13 +55,13 @@ export default function Footer() {
             <h4 className="font-heading text-lg font-bold mb-6">Contact Info</h4>
             <div className="space-y-4">
               <div className="flex items-start gap-3"><Phone className="w-4 h-4 text-gold-500 mt-1 flex-shrink-0" /><span className="text-navy-400 text-sm">+91 98765 43210</span></div>
-              <div className="flex items-start gap-3"><Mail className="w-4 h-4 text-gold-500 mt-1 flex-shrink-0" /><span className="text-navy-400 text-sm">hello@petalevents.com</span></div>
-              <div className="flex items-start gap-3"><MapPin className="w-4 h-4 text-gold-500 mt-1 flex-shrink-0" /><span className="text-navy-400 text-sm">42 Event Plaza, MG Road, Mumbai 400001</span></div>
+              <div className="flex items-start gap-3"><Mail className="w-4 h-4 text-gold-500 mt-1 flex-shrink-0" /><span className="text-navy-400 text-sm">hello@petalfitness.com</span></div>
+              <div className="flex items-start gap-3"><MapPin className="w-4 h-4 text-gold-500 mt-1 flex-shrink-0" /><span className="text-navy-400 text-sm">42 Fitness Plaza, MG Road, Mumbai 400001</span></div>
             </div>
           </div>
         </div>
         <div className="border-t border-navy-800 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-navy-500 text-sm">&copy; {new Date().getFullYear()} Petal Events. All rights reserved.</p>
+          <p className="text-navy-500 text-sm">&copy; {new Date().getFullYear()} Petal Fitness. All rights reserved.</p>
           <div className="flex gap-6 text-navy-500 text-sm">
             <a href="#" className="hover:text-gold-400 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-gold-400 transition-colors">Terms of Service</a>

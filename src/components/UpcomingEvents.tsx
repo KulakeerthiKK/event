@@ -20,8 +20,8 @@ export default function UpcomingEvents() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-16">
           <span className="text-gold-500 font-semibold text-sm tracking-widest uppercase">Upcoming</span>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-navy-800 mt-3 mb-6">Upcoming Local Events</h2>
-          <p className="text-navy-600 text-lg max-w-2xl mx-auto">Don't miss out on these exciting upcoming events in your area.</p>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-navy-800 mt-3 mb-6">Upcoming Fitness Sessions</h2>
+          <p className="text-navy-600 text-lg max-w-2xl mx-auto">Join our next classes and workshops to stay motivated, strong, and energized.</p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 gap-6">
@@ -53,7 +53,7 @@ export default function UpcomingEvents() {
               <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
                 className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl" onClick={(e) => e.stopPropagation()}>
               <div className="flex items-center justify-between mb-6">
-                <h3 className="font-heading text-xl font-bold text-navy-800">Register for Event</h3>
+                <h3 className="font-heading text-xl font-bold text-navy-800">Register for Session</h3>
                 <button onClick={() => setShowForm(false)} className="p-1 text-navy-400 hover:text-navy-600"><X className="w-5 h-5" /></button>
               </div>
               {submitted ? (
@@ -62,7 +62,7 @@ export default function UpcomingEvents() {
                     <svg className="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                   </div>
                   <h4 className="font-heading text-lg font-bold text-navy-800 mb-2">Registration Successful!</h4>
-                  <p className="text-navy-600 text-sm">We'll send you event details shortly.</p>
+                  <p className="text-navy-600 text-sm">We'll send your session details shortly.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -75,7 +75,7 @@ export default function UpcomingEvents() {
                   <div><label className="block text-sm font-medium text-navy-700 mb-1">Phone</label>
                     <input required type="tel" value={formData.phone} onChange={(e) => setFormData((f) => ({ ...f, phone: e.target.value }))}
                       className="w-full px-4 py-3 rounded-xl border border-navy-200 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none transition-all text-sm" placeholder="Your phone number" /></div>
-                  <div><label className="block text-sm font-medium text-navy-700 mb-1">Event</label>
+                  <div><label className="block text-sm font-medium text-navy-700 mb-1">Session</label>
                     <input readOnly value={formData.event} className="w-full px-4 py-3 rounded-xl border border-navy-200 bg-navy-50 text-sm text-navy-600" /></div>
                   <button type="submit" className="btn-primary w-full text-sm mt-2">Complete Registration</button>
                 </form>

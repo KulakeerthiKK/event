@@ -66,8 +66,8 @@ export default function ServicePage({ title, subtitle, description, image, featu
 
       <section className="section-padding bg-navy-800 text-white text-center">
         <div className="container-custom max-w-2xl">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">Ready to Plan Your {title}?</h2>
-          <p className="text-navy-300 mb-8">Get a free consultation and let us bring your vision to life.</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">Ready to Start Your {title}?</h2>
+          <p className="text-navy-300 mb-8">Get a free consultation and let us help you reach your fitness goals.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/" className="btn-primary text-base" onClick={() => setTimeout(() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }), 100)}>
               Request Consultation <ArrowRight className="w-5 h-5" />

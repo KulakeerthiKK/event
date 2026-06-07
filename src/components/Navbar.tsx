@@ -10,7 +10,7 @@ const navLinks = [
   { label: 'Portfolio', href: '#portfolio' },
   { label: 'Process', href: '#process' },
   { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Events', href: '#upcoming' },
+  { label: 'Classes', href: '#upcoming' },
   { label: 'Blog', href: '#blog' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -51,7 +51,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-2 group">
             <Sparkles className={`w-7 h-7 transition-colors ${scrolled ? 'text-gold-500' : 'text-gold-400'}`} />
             <span className={`font-heading text-2xl font-bold transition-colors ${scrolled ? 'text-navy-800' : 'text-white'}`}>
-              Petal Events
+              Petal Fitness
             </span>
           </Link>
           <div className="hidden lg:flex items-center gap-8">

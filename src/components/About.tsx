@@ -22,11 +22,10 @@ export default function About() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-16">
           <span className="text-gold-500 font-semibold text-sm tracking-widest uppercase">About Us</span>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-navy-800 mt-3 mb-6">Your Trusted Local Event Partner</h2>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-navy-800 mt-3 mb-6">Your Dedicated Fitness & Wellness Partner</h2>
           <p className="text-navy-600 text-lg max-w-3xl mx-auto leading-relaxed">
-            We help individuals, businesses, schools, and communities create successful events through expert planning,
-            creative design, and flawless execution. With over a decade of experience, we've become the go-to partner
-            for memorable events across the region.
+            We help busy professionals, athletes, and wellness seekers achieve their goals with expert coaching,
+            tailored programs, and a motivating gym community. With years of experience, we deliver results you can feel.
           </p>
         </motion.div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">

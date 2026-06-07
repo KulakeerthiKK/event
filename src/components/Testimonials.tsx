@@ -25,7 +25,7 @@ export default function Testimonials() {
           className="text-center mb-16">
           <span className="text-gold-400 font-semibold text-sm tracking-widest uppercase">Testimonials</span>
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-white mt-3 mb-6">What Our Clients Say</h2>
-          <p className="text-navy-300 text-lg max-w-2xl mx-auto">Hear from the people who have trusted us with their most important events.</p>
+          <p className="text-navy-300 text-lg max-w-2xl mx-auto">Hear from members who have achieved strength, confidence, and wellness with our coaching and programs.</p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto relative">

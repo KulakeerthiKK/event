@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Clock, Send, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 
-const eventTypes = ['Wedding', 'Corporate Event', 'Community Event', 'Festival/Concert', 'Exhibition/Trade Show', 'School/College Event', 'Other'];
+const eventTypes = ['Personal Training', 'Group Classes', 'Nutrition Coaching', 'Wellness Retreat', 'Youth Fitness', 'Corporate Wellness', 'Other'];
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', phone: '', email: '', eventType: '', eventDate: '', budget: '', message: '' });
@@ -25,8 +25,8 @@ export default function Contact() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-16">
           <span className="text-gold-500 font-semibold text-sm tracking-widest uppercase">Contact Us</span>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-navy-800 mt-3 mb-6">Let's Plan Your Next Event</h2>
-          <p className="text-navy-600 text-lg max-w-2xl mx-auto">Get in touch for a free consultation and let us bring your event vision to life.</p>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-navy-800 mt-3 mb-6">Let's Start Your Fitness Journey</h2>
+          <p className="text-navy-600 text-lg max-w-2xl mx-auto">Contact us for a free consultation and discover the right training path for your goals.</p>
         </motion.div>
 
         <div className="grid lg:grid-cols-5 gap-12">
@@ -37,8 +37,8 @@ export default function Contact() {
               <div className="space-y-5">
                 {[
                   { icon: Phone, label: 'Phone', value: '+91 98765 43210' },
-                  { icon: Mail, label: 'Email', value: 'hello@petalevents.com' },
-                  { icon: MapPin, label: 'Address', value: '42 Event Plaza, MG Road, Mumbai 400001' },
+                  { icon: Mail, label: 'Email', value: 'hello@petalfitness.com' },
+                  { icon: MapPin, label: 'Address', value: '42 Fitness Plaza, MG Road, Mumbai 400001' },
                   { icon: Clock, label: 'Working Hours', value: 'Mon - Sat: 9 AM - 7 PM' },
                 ].map(({ icon: Icon, label, value }) => (
                   <div key={label} className="flex items-start gap-4">
@@ -86,25 +86,25 @@ export default function Contact() {
                   <div><label className="block text-sm font-medium text-navy-700 mb-1">Email</label>
                     <input required type="email" value={formData.email} onChange={(e) => setFormData((f) => ({ ...f, email: e.target.value }))} className={inputClass} placeholder="your@email.com" /></div>
                   <div className="grid sm:grid-cols-3 gap-5">
-                    <div><label className="block text-sm font-medium text-navy-700 mb-1">Event Type</label>
+                    <div><label className="block text-sm font-medium text-navy-700 mb-1">Program Type</label>
                       <select required value={formData.eventType} onChange={(e) => setFormData((f) => ({ ...f, eventType: e.target.value }))} className={inputClass}>
                         <option value="">Select type</option>{eventTypes.map((t) => <option key={t} value={t}>{t}</option>)}
                       </select></div>
-                    <div><label className="block text-sm font-medium text-navy-700 mb-1">Event Date</label>
+                    <div><label className="block text-sm font-medium text-navy-700 mb-1">Preferred Start Date</label>
                       <input type="date" value={formData.eventDate} onChange={(e) => setFormData((f) => ({ ...f, eventDate: e.target.value }))} className={inputClass} /></div>
-                    <div><label className="block text-sm font-medium text-navy-700 mb-1">Budget Range</label>
+                    <div><label className="block text-sm font-medium text-navy-700 mb-1">Program Range</label>
                       <select value={formData.budget} onChange={(e) => setFormData((f) => ({ ...f, budget: e.target.value }))} className={inputClass}>
                         <option value="">Select range</option>
-                        <option value="Under 1 Lakh">Under 1 Lakh</option>
-                        <option value="1-5 Lakhs">1-5 Lakhs</option>
-                        <option value="5-10 Lakhs">5-10 Lakhs</option>
-                        <option value="10-25 Lakhs">10-25 Lakhs</option>
-                        <option value="25+ Lakhs">25+ Lakhs</option>
+                        <option value="Trial Session">Trial Session</option>
+                        <option value="Monthly Membership">Monthly Membership</option>
+                        <option value="Quarterly Membership">Quarterly Membership</option>
+                        <option value="Annual Membership">Annual Membership</option>
+                        <option value="Corporate Program">Corporate Program</option>
                       </select></div>
                   </div>
                   <div><label className="block text-sm font-medium text-navy-700 mb-1">Message</label>
                     <textarea required rows={4} value={formData.message} onChange={(e) => setFormData((f) => ({ ...f, message: e.target.value }))}
-                      className={inputClass + ' resize-none'} placeholder="Tell us about your event..." /></div>
+                      className={inputClass + ' resize-none'} placeholder="Tell us about your goals and fitness preferences..." /></div>
                   <button type="submit" className="btn-primary w-full text-base">Request a Free Consultation <Send className="w-5 h-5" /></button>
                 </form>
               )}

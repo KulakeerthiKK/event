@@ -8,8 +8,8 @@ export default function Process() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-16">
           <span className="text-gold-500 font-semibold text-sm tracking-widest uppercase">How We Work</span>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-navy-800 mt-3 mb-6">Event Planning Process</h2>
-          <p className="text-navy-600 text-lg max-w-2xl mx-auto">A structured approach that ensures every detail is covered, from initial concept to post-event wrap-up.</p>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-navy-800 mt-3 mb-6">Fitness Onboarding Process</h2>
+          <p className="text-navy-600 text-lg max-w-2xl mx-auto">A proven process that helps you start strong, stay consistent, and build lasting wellness habits.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

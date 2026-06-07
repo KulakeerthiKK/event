@@ -10,8 +10,8 @@ export default function WhyChooseUs() {
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}
             className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-navy-900/10">
-              <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Professional event setup" className="w-full h-[500px] object-cover" />
+              <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Gym training session" className="w-full h-[500px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/30 to-transparent" />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-gold-500 rounded-2xl p-6 shadow-xl hidden md:block">
@@ -22,10 +22,9 @@ export default function WhyChooseUs() {
 
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
             <span className="text-gold-500 font-semibold text-sm tracking-widest uppercase">Why Choose Us</span>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy-800 mt-3 mb-6">We Make Every Event Extraordinary</h2>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-navy-800 mt-3 mb-6">Fitness Support You Can Trust</h2>
             <p className="text-navy-600 leading-relaxed mb-8">
-              With a proven track record of successful events and a network of trusted vendors, we deliver experiences
-              that exceed expectations every single time.
+              With expert trainers, evidence-based programs, and a supportive community, we help you make steady progress and feel stronger every day.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {whyChooseUs.map((feature, i) => (

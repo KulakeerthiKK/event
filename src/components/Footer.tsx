@@ -56,7 +56,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-start gap-3"><Phone className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" /><span className="text-black-400 text-sm">+91 98765 43210</span></div>
               <div className="flex items-start gap-3"><Mail className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" /><span className="text-black-400 text-sm">hello@thecreatureevents.com</span></div>
-              <div className="flex items-start gap-3"><MapPin className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" /><span className="text-black-400 text-sm">123 Event Plaza, Premium District, Mumbai 400001</span></div>
+              <div className="flex items-start gap-3"><MapPin className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" /><span className="text-black-400 text-sm">139, Aditya Layout Main Rd, Aditya Layout, Rajarajeshwari Nagar, Bengaluru, Karnataka 560098</span></div>
             </div>
           </div>
         </div>

@@ -38,7 +38,7 @@ export default function Contact() {
                 {[
                   { icon: Phone, label: 'Phone', value: '+91 98765 43210' },
                   { icon: Mail, label: 'Email', value: 'hello@thecreatureevents.com' },
-                  { icon: MapPin, label: 'Address', value: '123 Event Plaza, Premium District, Mumbai 400001' },
+                  { icon: MapPin, label: 'Address', value: '139, Aditya Layout Main Rd, Aditya Layout, Rajarajeshwari Nagar, Bengaluru, Karnataka 560098' },
                   { icon: Clock, label: 'Working Hours', value: 'Mon - Sat: 9 AM - 7 PM' },
                 ].map(({ icon: Icon, label, value }) => (
                   <div key={label} className="flex items-start gap-4">

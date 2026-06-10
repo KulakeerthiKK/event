@@ -9,8 +9,8 @@ export default function Blog() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-16">
           <span className="text-orange-500 font-semibold text-sm tracking-widest uppercase">Blog</span>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-black-800 mt-3 mb-6">Latest Fitness Insights</h2>
-          <p className="text-black-600 text-lg max-w-2xl mx-auto">Training tips, nutrition strategies, and wellness ideas to support your fitness journey.</p>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-black-800 mt-3 mb-6">Event Planning Insights</h2>
+          <p className="text-black-600 text-lg max-w-2xl mx-auto">Expert tips, design trends, and strategies to help you plan and execute memorable events.</p>
         </motion.div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogPosts.map((post, i) => (

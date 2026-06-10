@@ -16,8 +16,8 @@ export default function Portfolio() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-12">
           <span className="text-orange-500 font-semibold text-sm tracking-widest uppercase">Our Work</span>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-black-800 mt-3 mb-6">Featured Fitness Transformations</h2>
-          <p className="text-black-600 text-lg max-w-2xl mx-auto">Explore our curated fitness programs, classes, and wellness journeys that deliver real results.</p>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-black-800 mt-3 mb-6">Featured Events</h2>
+          <p className="text-black-600 text-lg max-w-2xl mx-auto">Explore our portfolio of spectacular events, from intimate celebrations to grand corporate gatherings.</p>
         </motion.div>
 
         <div className="flex flex-wrap justify-center gap-3 mb-12">

@@ -28,7 +28,7 @@ export default function Hero() {
           transition={{ duration: 1.2, ease: 'easeInOut' }}
           className="absolute inset-0"
         >
-          <img src={heroSlides[current].image} alt="Fitness" className="w-full h-full object-cover" />
+          <img src={heroSlides[current].image} alt="Event" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-black-900/80 via-black-900/60 to-black-900/40" />
           <div className="absolute inset-0 bg-gradient-to-t from-black-900/50 via-transparent to-transparent" />
         </motion.div>
@@ -48,7 +48,7 @@ export default function Hero() {
               <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3, duration: 0.6 }}
                 className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-[2px] bg-orange-500" />
-                <span className="text-orange-400 font-body text-sm font-semibold tracking-widest uppercase">Premium Fitness Training</span>
+                <span className="text-orange-400 font-body text-sm font-semibold tracking-widest uppercase">Premium Event Management</span>
               </motion.div>
 
               <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6">

@@ -20,8 +20,8 @@ export default function UpcomingEvents() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-16">
           <span className="text-orange-500 font-semibold text-sm tracking-widest uppercase">Upcoming</span>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-black-800 mt-3 mb-6">Upcoming Fitness Sessions</h2>
-          <p className="text-black-600 text-lg max-w-2xl mx-auto">Join our next classes and workshops to stay motivated, strong, and energized.</p>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-black-800 mt-3 mb-6">Upcoming Events & Showcases</h2>
+          <p className="text-black-600 text-lg max-w-2xl mx-auto">Attend our exclusive event showcases and planning sessions to experience what we can create for you.</p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 gap-6">
@@ -53,7 +53,7 @@ export default function UpcomingEvents() {
               <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
                 className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl" onClick={(e) => e.stopPropagation()}>
               <div className="flex items-center justify-between mb-6">
-                <h3 className="font-heading text-xl font-bold text-black-800">Register for Session</h3>
+                <h3 className="font-heading text-xl font-bold text-black-800">Register for Event</h3>
                 <button onClick={() => setShowForm(false)} className="p-1 text-black-400 hover:text-black-600"><X className="w-5 h-5" /></button>
               </div>
               {submitted ? (

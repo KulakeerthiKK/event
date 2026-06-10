@@ -10,21 +10,21 @@ export default function WhyChooseUs() {
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}
             className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black-900/10">
-              <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Gym training session" className="w-full h-[500px] object-cover" />
+              <img src="https://images.pexels.com/photos/3573287/pexels-photo-3573287.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Event celebration" className="w-full h-[500px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black-900/30 to-transparent" />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-orange-500 rounded-2xl p-6 shadow-xl hidden md:block">
-              <div className="font-heading text-3xl font-bold text-black-900">12+</div>
+              <div className="font-heading text-3xl font-bold text-black-900">10+</div>
               <div className="text-black-800 font-medium text-sm">Years of<br />Excellence</div>
             </div>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
             <span className="text-orange-500 font-semibold text-sm tracking-widest uppercase">Why Choose Us</span>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-black-800 mt-3 mb-6">Fitness Support You Can Trust</h2>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-black-800 mt-3 mb-6">Event Excellence You Can Trust</h2>
             <p className="text-black-600 leading-relaxed mb-8">
-              With expert trainers, evidence-based programs, and a supportive community, we help you make steady progress and feel stronger every day.
+              With experienced planners, creative vision, and meticulous attention to detail, we ensure your event is executed flawlessly and leaves lasting impressions on your guests.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {whyChooseUs.map((feature, i) => (

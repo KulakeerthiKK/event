@@ -17,7 +17,7 @@ export default function Statistics() {
   return (
     <section className="relative py-20 md:py-28 overflow-hidden">
       <div className="absolute inset-0">
-        <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Fitness" className="w-full h-full object-cover" />
+        <img src="https://images.pexels.com/photos/3950311/pexels-photo-3950311.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Events" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black-900/85" />
       </div>
       <div className="relative container-custom">

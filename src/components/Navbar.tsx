@@ -11,7 +11,7 @@ const navLinks = [
   { label: 'Portfolio', href: '#portfolio' },
   { label: 'Process', href: '#process' },
   { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Classes', href: '#upcoming' },
+  { label: 'Events', href: '#upcoming' },
   { label: 'Blog', href: '#blog' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -50,9 +50,9 @@ export default function Navbar() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3 group">
-            <img src={logo} alt="Wow Fitness KA 42 logo" className="w-10 h-auto" />
+            <img src={logo} alt="The Creature Events logo" className="w-10 h-auto" />
             <span className={`font-heading text-2xl font-bold transition-colors ${scrolled ? 'text-black-800' : 'text-white'}`}>
-              Wow Fitness KA 42
+              The Creature Events
             </span>
           </Link>
           <div className="hidden lg:flex items-center gap-8">

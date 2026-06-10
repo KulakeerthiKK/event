@@ -8,8 +8,8 @@ export default function Partners() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-12">
           <span className="text-orange-500 font-semibold text-sm tracking-widest uppercase">Partners</span>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-black-800 mt-3 mb-4">Our Fitness Partners</h2>
-          <p className="text-black-600 max-w-xl mx-auto">We collaborate with leading brands to bring you the best fitness gear, nutrition, and wellness support.</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-black-800 mt-3 mb-4">Our Event Partners</h2>
+          <p className="text-black-600 max-w-xl mx-auto">We collaborate with leading vendors and service providers to deliver exceptional event experiences.</p>
         </motion.div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
           {partners.map((partner, i) => (

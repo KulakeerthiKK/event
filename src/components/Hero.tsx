@@ -61,7 +61,7 @@ export default function Hero() {
 
               <div className="flex flex-wrap gap-4">
                 <button onClick={() => scrollTo('#contact')} className="btn-primary text-base">
-                  Start Training <ArrowRight className="w-5 h-5" />
+                  Book Event <ArrowRight className="w-5 h-5" />
                 </button>
                 <button onClick={() => scrollTo('#portfolio')} className="btn-secondary text-base">View Our Work</button>
               </div>

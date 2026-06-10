@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo.png';
 
 const navLinks = [
   { label: 'Home', href: '#hero' },
@@ -50,7 +50,7 @@ export default function Navbar() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3 group">
-            <img src={logo} alt="The Creature Events logo" className="w-10 h-auto" />
+            <img src={logo} alt="The Creature Events logo" className="w-16 h-auto" />
             <span className={`font-heading text-2xl font-bold transition-colors ${scrolled ? 'text-black-800' : 'text-white'}`}>
               The Creature Events
             </span>

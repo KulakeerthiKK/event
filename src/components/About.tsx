@@ -24,7 +24,7 @@ export default function About() {
           <span className="text-orange-500 font-semibold text-sm tracking-widest uppercase">About Us</span>
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-black-800 mt-3 mb-6">Crafting Memorable Events Since 2015</h2>
           <p className="text-black-600 text-lg max-w-3xl mx-auto leading-relaxed">
-            The Creature Events specializes in creating unforgettable experiences for weddings, corporate events, celebrations, and entertainment gatherings. 
+            WOW Fitness specializes in creating unforgettable experiences for weddings, corporate events, celebrations, and entertainment gatherings. 
             With our expert team, creative vision, and attention to detail, we turn your dreams into reality with professionalism and passion.
           </p>
         </motion.div>

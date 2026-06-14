@@ -22,7 +22,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="flex items-center gap-2 mb-6">
               <Sparkles className="w-7 h-7 text-orange-500" />
-              <span className="font-heading text-2xl font-bold">The Creature Events</span>
+              <span className="font-heading text-2xl font-bold">WOW Fitness</span>
             </Link>
             <p className="text-black-400 text-sm leading-relaxed mb-6">Premium event management services bringing your vision to life with creativity, expertise, and flawless execution.</p>
             <div className="flex gap-3">
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-black-800 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-black-500 text-sm">&copy; {new Date().getFullYear()} The Creature Events. All rights reserved.</p>
+          <p className="text-black-500 text-sm">&copy; {new Date().getFullYear()} WOW Fitness. All rights reserved.</p>
           <div className="flex gap-6 text-black-500 text-sm">
             <a href="#" className="hover:text-orange-400 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-orange-400 transition-colors">Terms of Service</a>

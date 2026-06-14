@@ -26,7 +26,7 @@ export default function Contact() {
           className="text-center mb-16">
           <span className="text-orange-500 font-semibold text-sm tracking-widest uppercase">Contact Us</span>
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-black-800 mt-3 mb-6">Let's Create Your Perfect Event</h2>
-          <p className="text-black-600 text-lg max-w-2xl mx-auto">Get in touch with The Creature Events for a free consultation and discover how we can bring your vision to life.</p>
+          <p className="text-black-600 text-lg max-w-2xl mx-auto">Get in touch with WOW Fitness for a free consultation and discover how we can bring your vision to life.</p>
         </motion.div>
 
         <div className="grid lg:grid-cols-5 gap-12">

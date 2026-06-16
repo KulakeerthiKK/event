@@ -22,10 +22,10 @@ export default function About() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-16">
           <span className="text-orange-500 font-semibold text-sm tracking-widest uppercase">About Us</span>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-black-800 mt-3 mb-6">Crafting Memorable Events Since 2015</h2>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-black-800 mt-3 mb-6">Crafting Unforgettable Events Since 2017</h2>
           <p className="text-black-600 text-lg max-w-3xl mx-auto leading-relaxed">
-            WOW Fitness specializes in creating unforgettable experiences for weddings, corporate events, celebrations, and entertainment gatherings. 
-            With our expert team, creative vision, and attention to detail, we turn your dreams into reality with professionalism and passion.
+            eevaggaofficial is Bangalore's premium event management company — specialising in weddings, corporate events, birthday celebrations, and live entertainment.
+            With in-house decor production, curated themes, and a passionate team, we turn every occasion into an extraordinary memory.
           </p>
         </motion.div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">

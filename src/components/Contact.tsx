@@ -25,8 +25,8 @@ export default function Contact() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-16">
           <span className="text-orange-500 font-semibold text-sm tracking-widest uppercase">Contact Us</span>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-black-800 mt-3 mb-6">Let's Create Your Perfect Event</h2>
-          <p className="text-black-600 text-lg max-w-2xl mx-auto">Get in touch with WOW Fitness for a free consultation and discover how we can bring your vision to life.</p>
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-black-800 mt-3 mb-6">Let's Plan Your Perfect Event</h2>
+          <p className="text-black-600 text-lg max-w-2xl mx-auto">Get in touch with eevaggaofficial for a free consultation and discover how we can bring your vision to life.</p>
         </motion.div>
 
         <div className="grid lg:grid-cols-5 gap-12">
@@ -37,8 +37,8 @@ export default function Contact() {
               <div className="space-y-5">
                 {[
                   { icon: Phone, label: 'Phone', value: '+91 98765 43210' },
-                  { icon: Mail, label: 'Email', value: 'hello@thecreatureevents.com' },
-                  { icon: MapPin, label: 'Address', value: '139, Aditya Layout Main Rd, Aditya Layout, Rajarajeshwari Nagar, Bengaluru, Karnataka 560098' },
+                  { icon: Mail, label: 'Email', value: 'hello@eevaggaofficial.com' },
+                  { icon: MapPin, label: 'Address', value: 'Prestige Altanta 1 A Koramangla, Bangalore, India 560034' },
                   { icon: Clock, label: 'Working Hours', value: 'Mon - Sat: 9 AM - 7 PM' },
                 ].map(({ icon: Icon, label, value }) => (
                   <div key={label} className="flex items-start gap-4">

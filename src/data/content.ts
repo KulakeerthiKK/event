@@ -1,7 +1,7 @@
 export const heroSlides = [
   {
     image: 'https://images.pexels.com/photos/1543269/pexels-photo-1543269.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    title: 'Create Unforgettable Moments with WOW Fitness',
+    title: 'Create Unforgettable Moments with eevaggaofficial',
     subtitle: 'From concept to celebration, we bring your vision to life with creativity, expertise, and flawless execution.',
   },
   {
@@ -168,42 +168,42 @@ export const testimonials = [
   {
     name: 'Meera Kapoor',
     organization: 'Bride - June Wedding',
-    review: 'WOW Fitness made our wedding day absolutely magical! Every detail was perfect, from the décor to the catering. Our guests are still talking about it!',
+    review: 'eevaggaofficial made our wedding day absolutely magical! Every detail was perfect, from the décor to the catering. Our guests are still talking about it!',
     rating: 5,
     image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     name: 'Rajesh Sharma',
     organization: 'Corporate Events Manager',
-    review: 'Our annual gala was a huge success thanks to WOW Fitness. Professional, creative, and delivered beyond our expectations.',
+    review: 'Our annual gala was a huge success thanks to eevaggaofficial. Professional, creative, and delivered beyond our expectations.',
     rating: 5,
     image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     name: 'Priya Desai',
     organization: 'Event Planner',
-    review: 'Working with the WOW Fitness team has been wonderful. They are organized, responsive, and truly care about making events memorable.',
+    review: 'Working with the eevaggaofficial team has been wonderful. They are organized, responsive, and truly care about making events memorable.',
     rating: 5,
     image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     name: 'Vikram Patel',
     organization: 'CEO - Tech Company',
-    review: 'Our product launch was a game changer! WOW Fitness handled everything flawlessly, creating an unforgettable experience for our clients.',
+    review: 'Our product launch was a game changer! eevaggaofficial handled everything flawlessly, creating an unforgettable experience for our clients.',
     rating: 5,
     image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     name: 'Anjali Reddy',
     organization: 'Wedding Planner',
-    review: 'The level of detail and professionalism shown by WOW Fitness is outstanding. They transformed our vision into reality beautifully.',
+    review: 'The level of detail and professionalism shown by eevaggaofficial is outstanding. They transformed our vision into reality beautifully.',
     rating: 5,
     image: 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     name: 'Sanjay Gupta',
     organization: 'Groom - April Wedding',
-    review: 'From day one, WOW Fitness understood our vision and delivered a wedding that exceeded all expectations. Highly recommended!',
+    review: 'From day one, eevaggaofficial understood our vision and delivered a wedding that exceeded all expectations. Highly recommended!',
     rating: 5,
     image: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
@@ -227,7 +227,7 @@ export const upcomingEvents = [
   {
     title: 'Corporate Event Planning Workshop',
     date: 'August 22, 2025',
-    location: 'WOW Fitness Studio',
+    location: 'eevaggaofficial Studio, Koramangla',
     description: 'Learn event planning strategies from our experienced team. Perfect for businesses planning annual events.',
     image: 'https://images.pexels.com/photos/3950311/pexels-photo-3950311.jpeg?auto=compress&cs=tinysrgb&w=600',
   },

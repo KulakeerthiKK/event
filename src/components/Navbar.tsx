@@ -50,13 +50,13 @@ export default function Navbar() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3 group">
-            <img src={logo} alt="WOW Fitness logo" className="w-20 h-auto" />
+            <img src={logo} alt="eevaggaofficial logo" className="w-20 h-auto" />
             <div className="hidden md:flex flex-col">
               <span className={`font-heading text-xl font-bold transition-colors ${scrolled ? 'text-black-800' : 'text-white'}`}>
-                WOW
+                Eevagga
               </span>
               <span className={`font-body text-sm font-semibold transition-colors ${scrolled ? 'text-yellow-600' : 'text-yellow-400'}`}>
-                FITNESS
+                OFFICIAL
               </span>
             </div>
           </Link>

@@ -7,48 +7,92 @@
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
   }
+
   body {
-    @apply font-body text-white bg-black-900;
+    @apply font-body text-dark-800 bg-white antialiased;
   }
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-brand-900;
   }
 }
 
 @layer components {
+  /* ── Layout ─────────────────────────────────────── */
   .section-padding {
     @apply py-20 md:py-28 lg:py-32 px-4 sm:px-6 lg:px-8;
   }
   .container-custom {
     @apply max-w-7xl mx-auto;
   }
+
+  /* ── Buttons ─────────────────────────────────────── */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 bg-orange-500 text-black-900 font-semibold px-8 py-4 rounded-full
-    hover:bg-orange-400 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/25 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2
+      bg-gradient-to-r from-brand-600 to-brand-500
+      text-white font-semibold px-8 py-4 rounded-full
+      hover:from-brand-500 hover:to-brand-400
+      shadow-brand hover:shadow-brand-lg
+      transition-all duration-300 active:scale-[0.97];
   }
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 border-2 border-orange-500 text-orange-500 font-semibold px-8 py-4 rounded-full
-    hover:bg-orange-500 hover:text-black-900 transition-all duration-300 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2
+      border-2 border-brand-500 text-brand-600 font-semibold px-8 py-4 rounded-full
+      hover:bg-brand-500 hover:text-white
+      transition-all duration-300 active:scale-[0.97];
   }
-  .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 border-2 border-orange-500 text-orange-500 font-semibold px-8 py-4 rounded-full
-    hover:bg-orange-500 hover:text-black-900 transition-all duration-300 active:scale-[0.98];
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2
+      bg-gradient-to-r from-gold-500 to-gold-400
+      text-dark-900 font-semibold px-8 py-4 rounded-full
+      hover:from-gold-400 hover:to-gold-300
+      shadow-gold hover:shadow-lg
+      transition-all duration-300 active:scale-[0.97];
   }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2
+      text-white/90 font-semibold px-8 py-4 rounded-full
+      border-2 border-white/30
+      hover:bg-white/10 hover:border-white/60
+      transition-all duration-300 active:scale-[0.97];
+  }
+
+  /* ── Text helpers ────────────────────────────────── */
   .gradient-text {
-    @apply bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent;
+  }
+  .gold-text {
+    @apply bg-gradient-to-r from-gold-600 to-gold-400 bg-clip-text text-transparent;
+  }
+
+  /* ── Cards ───────────────────────────────────────── */
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-dark-100/60
+      hover:shadow-card-lg hover:-translate-y-1 transition-all duration-300;
+  }
+
+  /* ── Section labels ──────────────────────────────── */
+  .section-label {
+    @apply inline-flex items-center gap-2 text-brand-600 font-semibold
+      text-xs tracking-[0.18em] uppercase;
+  }
+  .section-label::before {
+    content: '';
+    @apply block w-8 h-[2px] bg-brand-500 rounded-full;
   }
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #f0f3f9;
-}
-::-webkit-scrollbar-thumb {
-  background: #6787c1;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #4169b2;
-}
+/* ── Scrollbar ───────────────────────────────────── */
+::-webkit-scrollbar        { width: 7px; }
+::-webkit-scrollbar-track  { background: #f0f0f0; }
+::-webkit-scrollbar-thumb  { background: #c040ef; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #a21bce; }
+
+/* ── Global section alternation ─────────────────── */
+.section-light { @apply bg-white; }
+.section-soft  { @apply bg-brand-50/40; }
+.section-dark  { @apply bg-dark-900; }
